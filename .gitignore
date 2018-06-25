@@ -1,0 +1,7 @@
+*.log
+
+dist/
+
+test-storybook/
+
+node_modules/

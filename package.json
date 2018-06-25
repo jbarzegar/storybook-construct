@@ -1,0 +1,35 @@
+{
+  "name": "storybook-construct",
+  "version": "0.0.0",
+  "description": "A suite of helper functions to help compose your stories with docs and knobs",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "source": "lib/index.js",
+  "author": "James Barzegar",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "lodash.isfunction": "3.0.9",
+    "lodash.reduce": "4.6.0"
+  },
+  "peerDependencies": {
+    "@storybook/addon-knobs": "3.4.8",
+    "@storybook/react": "3.4.8",
+    "react": "16.4.1",
+    "storybook-readme": "3.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-plugin-external-helpers": "6.22.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "microbundle": "0.4.4",
+    "rollup": "0.61.2",
+    "rollup-plugin-babel": "3.0.5",
+    "rollup-plugin-filesize": "2.0.0"
+  }
+}
