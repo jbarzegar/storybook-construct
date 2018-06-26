@@ -1,7 +1,8 @@
 import fileSize from 'rollup-plugin-filesize'
 import babel from 'rollup-plugin-babel'
+import resolve from 'rollup-plugin-node-resolve'
 
-const plugins = [fileSize(), babel()]
+const plugins = [fileSize(), babel(), resolve()]
 
 const constructBuildFiles = (filename = 'index') => ({
   input: `lib/${filename}.js`,
@@ -9,7 +10,7 @@ const constructBuildFiles = (filename = 'index') => ({
     file: `dist/${filename}.js`,
     format: 'es'
   },
-  external: ['react', 'lodash.isfunction', 'lodash.reduce', 'storybook-readme'],
+  external: ['react', 'storybook-readme'],
   plugins
 })
 

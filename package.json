@@ -1,6 +1,6 @@
 {
   "name": "storybook-construct",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A suite of helper functions to help compose your stories with docs and knobs",
   "author": "James Barzegar",
   "license": "MIT",
@@ -16,8 +16,7 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "lodash.isfunction": "3.0.9",
-    "lodash.reduce": "4.6.0"
+    "lodash-es": "4.17.10"
   },
   "peerDependencies": {
     "@storybook/addon-knobs": "^3.4.8",
@@ -33,6 +32,7 @@
     "babel-preset-react": "6.24.1",
     "rollup": "0.61.2",
     "rollup-plugin-babel": "3.0.5",
-    "rollup-plugin-filesize": "2.0.0"
+    "rollup-plugin-filesize": "2.0.0",
+    "rollup-plugin-node-resolve": "3.3.0"
   }
 }
