@@ -1,6 +1,6 @@
 {
   "name": "storybook-construct",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A suite of helper functions to help compose your stories with docs and knobs",
   "main": "dist/index.js",
   "author": "James Barzegar",
