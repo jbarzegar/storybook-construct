@@ -16,10 +16,10 @@
     "lodash.reduce": "4.6.0"
   },
   "peerDependencies": {
-    "@storybook/addon-knobs": "3.4.8",
-    "@storybook/react": "3.4.8",
-    "react": "16.4.1",
-    "storybook-readme": "3.3.0"
+    "@storybook/addon-knobs": "^3.4.8",
+    "@storybook/react": "^3.4.8",
+    "react": "^16.4.1",
+    "storybook-readme": "^3.3.0"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
