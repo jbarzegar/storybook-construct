@@ -2,7 +2,7 @@
 
 A set of helper functions that enable quicker writing of docs and knobs
 
-This addon is currently _only compatible with React_
+This addon is currently **only compatible with React** for now.
 
 ## Install
 
@@ -34,7 +34,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import * as knob from '@storybook/addon-knobs'
 
-import constructStoryComponent, { constructKnob } from 'storybook-construct'
+import constructStoryComponent, { createKnob } from 'storybook-construct'
 
 const MyStoryComponent = () => (/* React code */)
 
@@ -44,16 +44,16 @@ export default storiesOf('Your Story', module).add(
     /* ...props */
     knobs: {
       /* Your knobs */
-      myNewKnob: constructKnob(knob.text, 'Knob name', 'Default Value')
+      myNewKnob: createKnob(knob.text, 'Knob name', 'Default Value')
     }
   })
 )
 ```
 
-### constructStoryComponent(Component, docs, props)
+### `constructStoryComponent(Component, docs, props)`
 
 Create a story that uses `withDocs` from `storybook-readme`
 
-### createKnob(knobFunction, ...knobParams)
+### `createKnob(knobFunction, ...knobParams)`
 
 Takes a knob function as first argument and all remaining arguments are that knobs params
