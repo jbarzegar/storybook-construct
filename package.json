@@ -1,6 +1,6 @@
 {
   "name": "storybook-construct",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A suite of helper functions to help compose your stories with docs and knobs",
   "main": "dist/index.js",
   "author": "James Barzegar",
@@ -16,14 +16,12 @@
   "scripts": {
     "build": "rollup -c"
   },
-  "dependencies": {
-    "lodash-es": "4.17.10"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "@storybook/addon-knobs": "^3.4.8",
-    "@storybook/react": "^3.4.8",
+    "@storybook/react": "3.4.10",
     "react": "^16.4.1",
-    "storybook-readme": "^3.3.0"
+    "storybook-readme": "3.3.0"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
